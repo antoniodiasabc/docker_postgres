@@ -1,6 +1,7 @@
 # docker_postgres
 
 ##para ajustar o ip do banco de dados
+
  docker-compose up
 
  docker network inspect bridge
