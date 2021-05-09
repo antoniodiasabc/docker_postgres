@@ -28,3 +28,13 @@ psql -U sis_web
 
 select * from posts;
 
+## para obter a secret key
+
+Run that code in a python shell:
+
+>>> import os
+>>> os.urandom(24)
+b'\x1d\xc6\x0f[\xed\x18\xd6:5\xe0\x0f\rG\xaf\xb4\xf4HT\xef\xc1\xf1\xa89f'
+
+nao esquecer de remover a letra b no comeco da string
+
