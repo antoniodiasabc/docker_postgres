@@ -2,7 +2,13 @@ FROM python:3.7-slim
 
 RUN python -m pip install --upgrade pip
 
-COPY requirements.txt requirements.txt
-RUN python -m pip install -r requirements.txt
+RUN pip install flask
 
-COPY  . .
+RUN pip install flask_sqlalchemy
+
+RUN pip install psycopg2-binary
+
+COPY app.py /app.py
+
+CMD ["python","app.py"]
+
